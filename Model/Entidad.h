@@ -1,7 +1,3 @@
-//
-// Created by natzgun on 12/06/23.
-//
-
 #ifndef REVOLUTION_GAME_ENTIDAD_H
 #define REVOLUTION_GAME_ENTIDAD_H
 

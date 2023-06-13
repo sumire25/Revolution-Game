@@ -1,7 +1,3 @@
-//
-// Created by natzgun on 10/06/23.
-//
-
 #ifndef MVC_ARCHITECTURE_SFML_CONTROLLER_H
 #define MVC_ARCHITECTURE_SFML_CONTROLLER_H
 
