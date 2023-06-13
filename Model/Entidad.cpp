@@ -1,7 +1,3 @@
-//
-// Created by natzgun on 12/06/23.
-//
-
 #include "Entidad.h"
 
 const Imagen &Entidad::getImg() const {

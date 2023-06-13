@@ -1,7 +1,3 @@
-//
-// Created by natzgun on 10/06/23.
-//
-
 #include "View.h"
 
 namespace Vw {
