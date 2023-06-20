@@ -7,20 +7,21 @@ using namespace std;
 
 class Entidad {
 protected:
-  Imagen img;
   vector<int> dimension;
   vector<int> posicion;
   vector<int> posicion_central;
   private:
 public:
-  const Imagen &getImg() const;
-  void setImg(const Imagen &img);
+    Entidad(const vector<int> &dimension, const vector<int> &posicion, const vector<int> &posicionCentral);
 
-  const vector<int> &getPosicion() const;
-  void setPosicion(const vector<int> &posicion);
+    const vector<int> &getPosicion() const;
+    void setPosicion(int x,int y);
 
-  const vector<int> &getPosicionCentral() const;
-  void setPosicionCentral(const vector<int> &posicionCentral);
+    const vector<int> &getPosicionCentral() const;
+    void setPosicionCentral(int x, int y);
+
+    const vector<int> &getDimension() const;
+    void setDimension(int x, int y);
 };
 
 
