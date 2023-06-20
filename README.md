@@ -1,4 +1,4 @@
-# Proyecto SFML
+# Proyecto SFML REVOLUTION GAME
 
 Este es un proyecto de ejemplo que utiliza la biblioteca SFML para implementar un patrón de diseño Modelo-Vista-Controlador (MVC). El proyecto está organizado en tres carpetas principales: `modelo`, `vista` y `controlador`.
 
