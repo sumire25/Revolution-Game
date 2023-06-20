@@ -4,30 +4,24 @@
 #include "Controller/Controller.h"
 
 int main() {
-  sf::RenderWindow window(sf::VideoMode(800, 600), "Mi Aplicación SFML");
-  // Como ejemplo crea un circulo
-  sf::CircleShape shape(100.f);
-  shape.setFillColor(sf::Color::Green);
+  sf::RenderWindow gameWindow(sf::VideoMode(800, 600), "Mi Aplicación SFML");
 
   Mdl::Model modelo; // Instancia del modelo
-  Vw::View vista(window); // Instancia de la vista, pasando la ventana como parámetro
+  Vw::View vista(gameWindow); // Instancia de la vista, pasando la ventana como parámetro
   Ctlr::Controller controlador(modelo, vista); // Instancia del controlador, pasando el modelo y la vista como parámetros
 
-  while (window.isOpen()) {
+  while (gameWindow.isOpen()) {
     sf::Event event;
-    while (window.pollEvent(event)) {
-      if (event.type == sf::Event::Closed) {
-        // window.close(); // Es un ejemmplo pero esto lo deberia manerar el controller
-        controlador.procesarEvento(event); // El controlador maneja los eventos y actualiza el modelo y la vista en consecuencia
-      }
+    while (gameWindow.pollEvent(event)) {
+      /*if (event.type == sf::Event::Closed) {
+        gameWindow.close(); // Es un ejemmplo pero esto lo deberia manerar el controller
+      }*/
+      controlador.procesarEvento(event); // El controlador maneja los eventos y actualiza el modelo y la vista en consecuencia
     }
-    /* Este es un ejemplo
-    window.clear();
-    window.draw(shape);
-    window.display();
-    */
+    gameWindow.clear();
     controlador.actualizar(); // El controlador actualiza el modelo y la vista en cada iteración
-    vista.dibujar(); // La vista dibuja los elementos en la ventana
+    vista.dibujar();
+    gameWindow.display();// La vista dibuja los elementos en la ventana
   }
 
   return 0;

@@ -5,7 +5,24 @@ namespace Vw {
 
   }
 
-  void View::dibujar() {
+  /* void View::ejecutar() {
+    while(ventana.isOpen()) {
+      sf::Event event;
+      while(ventana.pollEvent(event)) {
+        procesarEventos(event);
+      }
+    }
+  } */
 
+  /* void View::procesarEventos(const sf::Event& evento) {
+    controlador.procesarEvento(event);
+  }*/
+
+  void View::dibujar() {
+    // Como ejemplo crea un circulo
+    sf::CircleShape shape(100.f);
+    shape.setFillColor(sf::Color::Green);
+    ventana.draw(shape);
   }
+
 };
