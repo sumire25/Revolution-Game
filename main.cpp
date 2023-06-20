@@ -12,7 +12,7 @@ int main() {
   Vw::View vista(gameWindow); // Instancia de la vista, pasando la ventana como parámetro
   Ctlr::Controller controlador(modelo, vista); // Instancia del controlador, pasando el modelo y la vista como parámetros
 
-  while (gameWindow.isOpen()) {
+  while (gameWindow.isOpen()) { //controlador est activo? extrae el booleano de vista
     sf::Event event;
     while (gameWindow.pollEvent(event)) {
       /*if (event.type == sf::Event::Closed) {

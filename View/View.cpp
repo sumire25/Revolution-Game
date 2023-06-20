@@ -26,4 +26,8 @@ namespace Vw {
     ventana.draw(shape);
   }
 
+  void View::ejecutar() {
+
+  }
+
 };

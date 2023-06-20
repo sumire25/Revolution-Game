@@ -13,6 +13,7 @@ namespace Mdl {
     Model();
 
     // Métodos y funciones relacionados con la lógica y los datos del modelo
+    void actualizar();
   };
 };
 

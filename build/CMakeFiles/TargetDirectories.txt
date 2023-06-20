@@ -1,0 +1,3 @@
+/home/natzgun/Development/SFML/Revolution-Game/build/CMakeFiles/Revolution_Game.dir
+/home/natzgun/Development/SFML/Revolution-Game/build/CMakeFiles/edit_cache.dir
+/home/natzgun/Development/SFML/Revolution-Game/build/CMakeFiles/rebuild_cache.dir

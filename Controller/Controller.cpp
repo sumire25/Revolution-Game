@@ -13,18 +13,18 @@ namespace Ctlr {
       case sf::Event::KeyPressed:
         if (evento.key.code == sf::Keyboard::W) {
           std::cout << "Tecla W presionada" << std::endl;
-          playerOne().setArriba(true);
+          //playerOne().setArriba(true);
         } else if (evento.key.code == sf::Keyboard::A) {
           std::cout << "Tecla A presionada" << std::endl;
-          playerOne().setIzquierda(true);
+          //playerOne().setIzquierda(true);
           // Lógica cuando se presiona la tecla A
         } else if (evento.key.code == sf::Keyboard::S) {
           std::cout << "Tecla S presionada" << std::endl;
-          playerOne().setAbajo(true);
+          //playerOne().setAbajo(true);
           // Lógica cuando se presiona la tecla S
         } else if (evento.key.code == sf::Keyboard::D) {
           std::cout << "Tecla D presionada" << std::endl;
-          playerOne().setDerecha(true);
+          //playerOne().setDerecha(true);
           // Lógica cuando se presiona la tecla D
         }
         break;
@@ -32,6 +32,7 @@ namespace Ctlr {
   }
 
   void Controller::actualizar() {
-
+    // Vista.tieneCambios ? quecambios tiene modeloUpdate :
+    // Va  apreguntar a vista si hay un cambio si detecta un cambio debe llamar a modelo
   }
 }

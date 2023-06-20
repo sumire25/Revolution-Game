@@ -11,6 +11,7 @@ namespace Vw {
   public:
     sf::RenderWindow &ventana; // Referencia a la ventana de SFML
     // Otros atributos y datos de la vista
+    //crear la ventana es aqui
 
   public:
     View(sf::RenderWindow &ventana);
@@ -18,7 +19,7 @@ namespace Vw {
     // void ejecutar();
     // void procesarEventos();
     void dibujar(); // Método para dibujar elementos en la ventana
-
+    void ejecutar();
     // Otros métodos y funciones relacionados con la representación visual
   };
 }
