@@ -12,6 +12,7 @@ namespace Ctlr {
   private:
     Mdl::Model &modelo; // Referencia al modelo
     Vw::View &vista; // Referencia a la vista
+    Jugador playerOne();
 
   public:
     Controller(Mdl::Model &modelo, Vw::View &vista);

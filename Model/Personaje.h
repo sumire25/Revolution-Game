@@ -7,7 +7,7 @@
 #include "Entidad.h"
 class Personaje : public Entidad {
 protected:
-    unsigned int vida;
+  unsigned int vida;
     unsigned int rapidez;
     vector<int> velocidad;
     //Arma* arma = Nullptr;

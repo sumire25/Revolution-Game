@@ -22,6 +22,7 @@ namespace Vw {
     // Como ejemplo crea un circulo
     sf::CircleShape shape(100.f);
     shape.setFillColor(sf::Color::Green);
+    shape.setPosition(0.f, 0.f);
     ventana.draw(shape);
   }
 

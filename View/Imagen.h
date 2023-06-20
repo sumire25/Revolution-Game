@@ -8,7 +8,7 @@ class Imagen {
 protected:
   sf::Texture disenio;
   std::vector<int> dimension;
-  void dibujar()
+  void dibujar();
 };
 
 

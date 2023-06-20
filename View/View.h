@@ -4,13 +4,13 @@
 // Archivo View.h
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "../Model/Jugador.h"
 
 namespace Vw {
   class View {
   public:
     sf::RenderWindow &ventana; // Referencia a la ventana de SFML
     // Otros atributos y datos de la vista
-    sf::CircleShape circle;
 
   public:
     View(sf::RenderWindow &ventana);

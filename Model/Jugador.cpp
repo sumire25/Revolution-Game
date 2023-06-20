@@ -30,16 +30,16 @@ void Jugador::setDerecha(bool derecha) {
 
 void Jugador::mover() {
     if(arriba){
-        setPosicion(getPosicion()[0],getPosicion()[1]+5)
+        setPosicion(getPosicion()[0],getPosicion()[1]+5);
     }
     if(abajo){
-        setPosicion(getPosicion()[0],getPosicion()[1]-5)
+        setPosicion(getPosicion()[0],getPosicion()[1]-5);
     }
     if(izquierda){
-        setPosicion(getPosicion()[0]-5,getPosicion()[1])
+        setPosicion(getPosicion()[0]-5,getPosicion()[1]);
     }
     if(arriba){
-        setPosicion(getPosicion()[0]+5,getPosicion()[1]+rapidez)
+        setPosicion(getPosicion()[0]+5,getPosicion()[1]+rapidez);
     }
 
 }

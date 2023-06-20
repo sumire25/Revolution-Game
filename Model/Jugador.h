@@ -6,12 +6,13 @@
 #define REVOLUTION_GAME_JUGADOR_H
 #include "Personaje.h"
 
-class Jugador:protected Personaje {
+class Jugador: public Personaje {
 private:
     bool arriba, abajo, izquierda, derecha;
     int puntos;
 public:
-    void setArriba(bool arriba);
+
+  void setArriba(bool arriba);
 
     void setAbajo(bool abajo);
 
