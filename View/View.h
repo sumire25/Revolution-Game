@@ -4,23 +4,28 @@
 // Archivo View.h
 #pragma once
 #include <SFML/Graphics.hpp>
-#include "../Model/Jugador.h"
 
 namespace Vw {
   class View {
-  public:
-    sf::RenderWindow &ventana; // Referencia a la ventana de SFML
+  private:
+    sf::RenderWindow gameWindow; // Referencia a la ventana de SFML
+    bool ventanaAbierta;
+    bool sePresionoBoton;
+
     // Otros atributos y datos de la vista
     //crear la ventana es aqui
 
   public:
-    View(sf::RenderWindow &ventana);
+    View();
 
-    // void ejecutar();
     // void procesarEventos();
-    void dibujar(); // Método para dibujar elementos en la ventana
     void ejecutar();
+    void dibujar(); // Método para dibujar elementos en la ventana
+    void actualizarVista();
+    void cerrarVentana();
     // Otros métodos y funciones relacionados con la representación visual
+    void manejarEventoTeclado(sf::Event evento);
+    sf::RenderWindow &obtenerVentana();
   };
 }
 

@@ -10,14 +10,13 @@
 namespace Ctlr {
   class Controller {
   private:
-    Mdl::Model &modelo; // Referencia al modelo
-    Vw::View &vista; // Referencia a la vista
-    Jugador playerOne();
+    Mdl::Model *modelo; // Referencia al modelo
+    Vw::View *vista; // Referencia a la vista
 
   public:
-    Controller(Mdl::Model &modelo, Vw::View &vista);
+    Controller(Mdl::Model* modelo, Vw::View* vista);
 
-    void procesarEvento(const sf::Event &evento); // Método para procesar eventos de SFML
+    void procesarAccion(); // Método para procesar eventos de SFML
 
     void actualizar(); // Método para actualizar el modelo y la vista en cada iteración
 

@@ -3,3 +3,7 @@
 Mdl::Model::Model() {
 
 }
+
+void Mdl::Model::actualizarModelo() {
+
+}
