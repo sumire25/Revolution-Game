@@ -10,17 +10,11 @@
 namespace Ctlr {
   class Controller {
   private:
-    Mdl::Model *modelo; // Referencia al modelo
-    Vw::View *vista; // Referencia a la vista
-
+    Mdl::Model modelo;
+    Vw::View vista;
   public:
-    Controller(Mdl::Model* modelo, Vw::View* vista);
-
-    void procesarAccion(); // Método para procesar eventos de SFML
-
-    void actualizar(); // Método para actualizar el modelo y la vista en cada iteración
-
-    // Otros métodos y funciones relacionados con la interacción y el control
+    Controller();
+    void ejecutar();
   };
 };
 
