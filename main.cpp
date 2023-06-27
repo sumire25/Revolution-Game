@@ -7,6 +7,5 @@
 int main() {
   Ctlr::Controller controlador;
   controlador.ejecutar();
-
   return 0;
 }
