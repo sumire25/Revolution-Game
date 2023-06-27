@@ -1,59 +1,43 @@
 #include "View.h"
 
 namespace Vw {
-  View::View() : ventanaAbierta(false), sePresionoBoton(false) {
-    gameWindow.create(sf::VideoMode(800, 600), "Ventana SFML");
-    ventanaAbierta = true;
+
+
+  View::View() {
+    int fps = 60;
+    window.create(sf::VideoMode(800, 600), "Ventana SFML");
+    window.setFramerateLimit(fps);
   }
-  void View::dibujar() {
 
+  bool View::isRunning() {
+    return window.isOpen();
   }
 
-  void View::ejecutar() {
-    while (ventanaAbierta) {
-      // Procesar eventos de la ventana de SFML
-      sf::Event evento;
-      while (gameWindow.pollEvent(evento)) {
-        if (evento.type == sf::Event::Closed) {
-          cerrarVentana();
-        } else if (evento.type == sf::Event::KeyPressed) {
-          manejarEventoTeclado(evento);
-        }
-      }
-
-      // Actualizar la vista según el estado del modelo
-      // ...
-
-      // Dibujar la esfera en la posición actual
-      // ...
-
-      gameWindow.display();
-    }
-
+  void View::getClear() {
+    window.clear();
+  }
+  void View::getDisplay() {
+    window.display();
   }
 
   void View::actualizarVista() {
-    // Actualizar la vista según el estado del modelo
-    // ...
 
-    // Dibujar la esfera en la posición actual
-    // ...
-
-    gameWindow.display();
   }
 
-  void View::cerrarVentana() {
-    ventanaAbierta = false;
-    gameWindow.close();
+
+
+  void View::drawEsfera(int radio, int x, int y) {
+    sf::CircleShape sphere(50.f);
+    sphere.setOrigin(x, y);
+    sphere.setFillColor(sf::Color::White);
+    window.draw(sphere);
   }
 
-  void View::manejarEventoTeclado(sf::Event evento) {
-    // Manejar eventos de teclado
-    // ...
-  }
+    sf::Event& View::getEvent() {
+        return evento;
+    }
 
-  sf::RenderWindow& View::obtenerVentana() {
-    return gameWindow;
-  }
-
+    bool View::getVentana() {
+        return window.pollEvent(getEvent());
+    }
 };

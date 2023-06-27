@@ -1,9 +1,8 @@
 #include "Model.h"
 
-Mdl::Model::Model() {
+namespace Mdl {
 
-}
+  Model::Model() {
 
-void Mdl::Model::actualizarModelo() {
-
+  }
 }

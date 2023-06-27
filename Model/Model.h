@@ -3,17 +3,14 @@
 
 // Archivo Model.h
 #pragma once
+#include "Esfera.h"
 
 namespace Mdl {
   class Model {
-  private:
-    // Atributos y datos del modelo
-
   public:
+    Esfera* esferita = new Esfera(0,0);
     Model();
 
-    // Métodos y funciones relacionados con la lógica y los datos del modelo
-    void actualizarModelo();
   };
 };
 
