@@ -17,16 +17,17 @@ namespace Vw {
     bool isRunning();
     // No se deben llamarse gets
     sf::Event& getEvent();
-    bool getVentana();
+    bool getVentanaPollEvent();
     void getCloseWindow();
     void getDisplay();
     void getClear();
     void actualizarVista();
+
     // Keyboard functions
-    void getKeyboardW();
-    void getKeyboardA();
-    void getKeyboardS();
-    void getKeyboardD();
+    bool getKeyboard_W();
+    bool getKeyboard_A();
+    bool getKeyboard_S();
+    bool getKeyboard_D();
     void drawEsfera(int,int,int);
 
   };

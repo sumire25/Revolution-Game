@@ -38,11 +38,27 @@ namespace Vw {
         return evento;
     }
 
-    bool View::getVentana() {
+    bool View::getVentanaPollEvent() {
         return window.pollEvent(getEvent());
     }
 
   void View::getCloseWindow() {
     window.close();
+  }
+
+  bool View::getKeyboard_W() {
+    return sf::Keyboard::isKeyPressed(sf::Keyboard::W);
+  }
+
+  bool View::getKeyboard_A() {
+    return sf::Keyboard::isKeyPressed(sf::Keyboard::A);
+  }
+
+  bool View::getKeyboard_S() {
+    return sf::Keyboard::isKeyPressed(sf::Keyboard::S);
+  }
+
+  bool View::getKeyboard_D() {
+    return sf::Keyboard::isKeyPressed(sf::Keyboard::D);
   }
 };
