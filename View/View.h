@@ -18,9 +18,15 @@ namespace Vw {
     // No se deben llamarse gets
     sf::Event& getEvent();
     bool getVentana();
+    void getCloseWindow();
     void getDisplay();
     void getClear();
     void actualizarVista();
+    // Keyboard functions
+    void getKeyboardW();
+    void getKeyboardA();
+    void getKeyboardS();
+    void getKeyboardD();
     void drawEsfera(int,int,int);
 
   };

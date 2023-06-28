@@ -5,7 +5,7 @@ namespace Vw {
 
   View::View() {
     int fps = 60;
-    window.create(sf::VideoMode(800, 600), "Ventana SFML");
+    window.create(sf::VideoMode(1280, 720), "Ventana SFML");
     window.setFramerateLimit(fps);
   }
 
@@ -28,7 +28,8 @@ namespace Vw {
 
   void View::drawEsfera(int radio, int x, int y) {
     sf::CircleShape sphere(50.f);
-    sphere.setOrigin(x, y);
+    //sphere.setOrigin(x, y);
+    sphere.move(x,y);
     sphere.setFillColor(sf::Color::White);
     window.draw(sphere);
   }
@@ -40,4 +41,8 @@ namespace Vw {
     bool View::getVentana() {
         return window.pollEvent(getEvent());
     }
+
+  void View::getCloseWindow() {
+    window.close();
+  }
 };
