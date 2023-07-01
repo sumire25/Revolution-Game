@@ -2,27 +2,28 @@
 #define REVOLUTION_GAME_ENTIDAD_H
 
 #include <vector>
-#include "../View/Imagen.h"
+#include "Vector2d.h"
 using namespace std;
 
 class Entidad {
 protected:
-  vector<int> dimension;
-  vector<int> posicion;
-  vector<int> posicion_central;
-  private:
+    Vector2d<int> dimension;
+    Vector2d<int> posicion;
+    Vector2d<int> posicion_central;
 public:
-    Entidad(const vector<int> &dimension, const vector<int> &posicion, const vector<int> &posicionCentral);
+    Entidad();
+    Entidad(int x, int y);
 
-    const vector<int> &getPosicion() const;
+    const Vector2d<int> &getPosicion() const;
     void setPosicion(int x,int y);
 
-    const vector<int> &getPosicionCentral() const;
+    const Vector2d<int> &getPosicionCentral() const;
     void setPosicionCentral(int x, int y);
 
-    const vector<int> &getDimension() const;
+    const Vector2d<int> &getDimension() const;
     void setDimension(int x, int y);
-};
 
+    virtual void actualizar() = 0;
+};
 
 #endif //REVOLUTION_GAME_ENTIDAD_H

@@ -1,8 +1,8 @@
 #include "Model.h"
 
-namespace Mdl {
-
-  Model::Model() {
-
-  }
+Mdl::Model::Model() {
+    myJuego = Juego();
+}
+void Mdl::Model::actualizar() {
+    myJuego.actualizar();
 }
