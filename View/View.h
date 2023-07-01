@@ -22,7 +22,7 @@ namespace Vw {
     void getDisplay();
     void getClear();
     void actualizarVista();
-
+    bool getEventTypeClose();
     // Keyboard functions
     bool getKeyboard_W();
     bool getKeyboard_A();

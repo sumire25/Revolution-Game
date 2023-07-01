@@ -61,4 +61,9 @@ namespace Vw {
   bool View::getKeyboard_D() {
     return sf::Keyboard::isKeyPressed(sf::Keyboard::D);
   }
+
+  bool View::getEventTypeClose() {
+    return sf::Event::Closed;
+  }
+
 };
