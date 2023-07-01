@@ -4,42 +4,59 @@
 
 #include "Jugador.h"
 
+Jugador::Jugador() {
+    arriba = false;
+    abajo = false;
+    izquierda = false;
+    derecha = false;
+    puntos = 0;
+    vida = 1;
+}
+Jugador::Jugador(int x, int y) : Personaje(x, y) {
+    arriba = false;
+    abajo = false;
+    izquierda = false;
+    derecha = false;
+    puntos = 0;
+    vida = 1;
+    posicion.setX(-500);
+    posicion.setY(-500);
+}
 int Jugador::getPuntos() const {
     return puntos;
 }
-
 void Jugador::setPuntos(int puntos) {
-    Jugador::puntos = puntos;
+    this->puntos = puntos;
 }
 
 void Jugador::setArriba(bool arriba) {
-    Jugador::arriba = arriba;
+    this->arriba = arriba;
 }
-
 void Jugador::setAbajo(bool abajo) {
-    Jugador::abajo = abajo;
+    this->abajo = abajo;
 }
-
 void Jugador::setIzquierda(bool izquierda) {
-    Jugador::izquierda = izquierda;
+    this->izquierda = izquierda;
 }
-
 void Jugador::setDerecha(bool derecha) {
-    Jugador::derecha = derecha;
+    this->derecha = derecha;
 }
 
-void Jugador::mover() {
+void Jugador::actualizar() {
     if(arriba){
-        setPosicion(getPosicion()[0],getPosicion()[1]+5);
+        posicion.setY(posicion.getY() + 5);
     }
     if(abajo){
-        setPosicion(getPosicion()[0],getPosicion()[1]-5);
+        posicion.setY(posicion.getY() - 5);
     }
     if(izquierda){
-        setPosicion(getPosicion()[0]-5,getPosicion()[1]);
+        posicion.setX(posicion.getX() - 5);
     }
-    if(arriba){
-        setPosicion(getPosicion()[0]+5,getPosicion()[1]+rapidez);
+    if(derecha){
+        posicion.setX(posicion.getX() + 5);
     }
+}
 
+void Jugador::mostrar() {
+    std::cout << posicion.getX() << ", " << posicion.getY() << std::endl;
 }

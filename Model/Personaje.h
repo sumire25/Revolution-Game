@@ -1,18 +1,21 @@
 //
-// Created by pickle on 20/06/23.
+// Created by msumi on 28/06/2023.
 //
 
 #ifndef REVOLUTION_GAME_PERSONAJE_H
 #define REVOLUTION_GAME_PERSONAJE_H
+
 #include "Entidad.h"
-class Personaje : public Entidad {
+
+class Personaje : protected Entidad{
 protected:
-  unsigned int vida;
+    unsigned int vida;
     unsigned int rapidez;
-    vector<int> velocidad;
+    Vector2d<int> velocidad;
     //Arma* arma = Nullptr;
 public:
-    virtual void mover()=0;
+    Personaje() : Entidad(){};
+    Personaje(int x, int y) : Entidad(x, y){};
     virtual void actualizar()=0;
 };
 

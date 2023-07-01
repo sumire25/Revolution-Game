@@ -5,29 +5,25 @@
 #ifndef REVOLUTION_GAME_JUGADOR_H
 #define REVOLUTION_GAME_JUGADOR_H
 #include "Personaje.h"
+#include <iostream>
 
-class Jugador: public Personaje {
+class Jugador: protected Personaje {
 private:
     bool arriba, abajo, izquierda, derecha;
     int puntos;
 public:
-
-  void setArriba(bool arriba);
-
+    Jugador();
+    Jugador(int x, int y);
+    void setArriba(bool arriba);
     void setAbajo(bool abajo);
-
     void setIzquierda(bool izquierda);
-
     void setDerecha(bool derecha);
 
     int getPuntos() const;
-
     void setPuntos(int puntos);
 
-protected:
-    void mover() override;
-
+    void actualizar() override;
+    void mostrar();
 };
-
 
 #endif //REVOLUTION_GAME_JUGADOR_H

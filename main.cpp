@@ -5,7 +5,12 @@
 #include "Controller/Controller.h"
 
 int main() {
-  Ctlr::Controller controlador;
-  controlador.ejecutar();
-  return 0;
+    Mdl::Model modelo;
+    modelo.myJuego.p1->mostrar();
+    modelo.myJuego.p1->setDerecha(true);
+    modelo.actualizar();
+    modelo.myJuego.p1->mostrar();
+    Ctlr::Controller controlador;
+    controlador.ejecutar();
+    return 0;
 }
