@@ -24,6 +24,7 @@ public:
     void setDimension(int x, int y);
 
     virtual void actualizar() = 0;
+    virtual ~Entidad() = default;
 };
 
 #endif //REVOLUTION_GAME_ENTIDAD_H
