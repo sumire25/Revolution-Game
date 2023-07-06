@@ -24,26 +24,26 @@ namespace Ctlr {
       }
       if (vista.getKeyboard_W()) {
         y -= 5;
-        vista.drawEsfera(50, x , y);
+        //vista.drawEsfera(50, x , y);
         std::cout << "Tecla W presionada" << std::endl;
       }
       if (vista.getKeyboard_A()) {
         x -= 5;
-        vista.drawEsfera(50, x, y);
+        //vista.drawEsfera(50, x, y);
         std::cout << "Tecla A presionada" << std::endl;
       }
       if (vista.getKeyboard_S()) {
         y += 5;
-        vista.drawEsfera(50, x, y);
+        //vista.drawEsfera(50, x, y);
         std::cout << "Tecla S presionada" << std::endl;
       }
       if (vista.getKeyboard_D()) {
         x += 5;
-        vista.drawEsfera(50, x, y);
+        //vista.drawEsfera(50, x, y);
         std::cout << "Tecla D presionada" << std::endl;
       }
-
-      vista.drawEsfera(50, x, y);
+      vista.drawJugador(x,y);
+      // vista.drawEsfera(50, x, y);
       vista.getDisplay();
     }
   }

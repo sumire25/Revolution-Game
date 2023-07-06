@@ -1,10 +1,10 @@
 #ifndef MVC_ARCHITECTURE_SFML_VIEW_H
 #define MVC_ARCHITECTURE_SFML_VIEW_H
 
-// Archivo View.h
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "JugadorView.h"
 
 namespace Vw {
   class View {
@@ -29,6 +29,10 @@ namespace Vw {
     bool getKeyboard_S();
     bool getKeyboard_D();
     void drawEsfera(int,int,int);
+
+    // Cargar el jugador
+    void drawJugador(int, int);
+    // void updateJugador();
 
   };
 }

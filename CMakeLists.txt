@@ -13,7 +13,7 @@ set(MODEL_SOURCES
 set(VIEW_SOURCES
         View/View.cpp
         View/View.h
-        View/Imagen.cpp View/Imagen.h)
+        View/Imagen.cpp View/Imagen.h View/Animation.cpp View/Animation.h View/JugadorView.cpp View/JugadorView.h)
 
 set(CONTROLLER_SOURCES
         Controller/Controller.cpp

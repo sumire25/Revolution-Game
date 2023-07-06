@@ -1,6 +1,3 @@
-//
-// Created by msumi on 27/06/2023.
-//
 
 #ifndef REVOLUTION_GAME_JUEGO_H
 #define REVOLUTION_GAME_JUEGO_H

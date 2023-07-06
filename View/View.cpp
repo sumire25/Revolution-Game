@@ -66,4 +66,11 @@ namespace Vw {
     return sf::Event::Closed;
   }
 
+  void View::drawJugador(int x, int y) {
+    JugadorView jugadorPrincipal(6, 0.2f);
+    jugadorPrincipal.updateA();
+    jugadorPrincipal.getSprite().move(x,y);
+    window.draw(jugadorPrincipal.getSprite());
+  }
+
 };
