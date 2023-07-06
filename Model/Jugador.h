@@ -24,6 +24,7 @@ public:
 
     void actualizar() override;
     void mostrar();
+    ~Jugador()override=default;
 };
 
 #endif //REVOLUTION_GAME_JUGADOR_H

@@ -3,7 +3,7 @@
 
 // Archivo Controller.h
 #pragma once
-#include <SFML/Window/Event.hpp>
+//#include <SFML/Window/Event.hpp>
 #include "../Model/Model.h"
 #include "../View/View.h"
 

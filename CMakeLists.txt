@@ -8,7 +8,7 @@ find_package(SFML 2.5 COMPONENTS system window graphics network audio REQUIRED)
 set(MODEL_SOURCES
         Model/Model.cpp Model/Model.h
         Model/Entidad.cpp Model/Entidad.h
-        Model/Personaje.h Model/Jugador.cpp Model/Jugador.h Model/Esfera.cpp Model/Esfera.h  Model/Juego.cpp Model/Juego.h Model/Personaje.cpp Model/Personaje.h)
+        Model/Personaje.h Model/Jugador.cpp Model/Jugador.h Model/Esfera.cpp Model/Esfera.h  Model/Juego.cpp Model/Juego.h Model/Personaje.cpp Model/Personaje.h Model/Item.cpp Model/Item.h Model/Firegun.cpp Model/Firegun.h Model/Proyectil.cpp Model/Proyectil.h)
 
 set(VIEW_SOURCES
         View/View.cpp
