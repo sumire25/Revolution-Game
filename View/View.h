@@ -5,6 +5,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include "JugadorView.h"
+#include "Menu.h"
 
 namespace Vw {
   class View {
@@ -30,6 +31,7 @@ namespace Vw {
     bool getKeyboard_D();
     void drawEsfera(int,int,int);
 
+    void initializeMenu();
     // Cargar el jugador
     void drawJugador(int, int);
     // void updateJugador();

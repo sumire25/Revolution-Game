@@ -41,6 +41,10 @@ sf::Sprite &JugadorView::getSprite() {
   return sprite;
 }
 
+void JugadorView::draw(sf::RenderTarget &target, sf::RenderStates states) const {
+  target.draw(this->sprite, states);
+}
+
 /*void JugadorView::draw() {
   sprite.setPosition(position);
   window.draw(sprite);
