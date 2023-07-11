@@ -9,6 +9,7 @@ namespace Ctlr {
   void Controller::ejecutar() {
     int y = 0;
     int x = 0;
+
     while (vista.isRunning()) {
       // std::cout << "Running" << std::endl;
       // vista.actualizarVista();
@@ -42,6 +43,7 @@ namespace Ctlr {
         //vista.drawEsfera(50, x, y);
         std::cout << "Tecla D presionada" << std::endl;
       }
+      // vista.initializeMenu();
       vista.drawJugador(x,y);
       // vista.drawEsfera(50, x, y);
       vista.getDisplay();

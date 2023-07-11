@@ -6,7 +6,7 @@
 #include <iostream>
 using std::string;
 
-class JugadorView {
+class JugadorView: public sf::Drawable {
   int numFrames;
   float frameTime;
   int currentFrame;
@@ -15,6 +15,7 @@ class JugadorView {
   sf::Sprite sprite;
 public:
   JugadorView(int, float);
+  void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
   void updateA();
   sf::Sprite &getSprite();
 };

@@ -70,7 +70,14 @@ namespace Vw {
     JugadorView jugadorPrincipal(6, 0.2f);
     jugadorPrincipal.updateA();
     jugadorPrincipal.getSprite().move(x,y);
-    window.draw(jugadorPrincipal.getSprite());
+    window.draw(jugadorPrincipal);
+  }
+
+  void View::initializeMenu() {
+    Menu main_menu;
+    main_menu.setBackground();
+    window.draw(main_menu.getSprite());
+    //main_menu.initMenu();
   }
 
 };
