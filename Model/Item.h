@@ -15,7 +15,10 @@ public:
 
     //v
     virtual void actualizar();
-    virtual ~Item(){};
+    virtual ~Item(){}
+    Item(int x,int y):Entidad(x,y){
+
+    };
 };
 
 
